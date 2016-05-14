@@ -177,6 +177,7 @@ public class UsbUtilities {
                     public void run() {
                         int interval = params.optInt("interval", 100);
                         int size = params.optInt("responseSize");
+
                         Byte endpoint = UsbUtilities.hexToByte(params.optString("exchangePoint"));
 
                         StreamEvent event = new StreamEvent(streamType, StreamEvent.Type.RECEIVE)

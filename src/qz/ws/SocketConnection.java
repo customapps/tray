@@ -50,7 +50,6 @@ public class SocketConnection {
         openSerialPorts.remove(port);
     }
 
-
     public boolean isListening() {
         return hidListener != null;
     }
@@ -65,7 +64,6 @@ public class SocketConnection {
         }
         hidListener = null;
     }
-
 
     public void addDevice(short vendor, short product, DeviceIO io) {
         HashMap<Short,DeviceIO> productMap = openDevices.get(vendor);

@@ -13,6 +13,7 @@ import javax.usb.util.UsbUtil;
 import java.util.List;
 
 public class HidUtilities {
+    
 
     private static HidServices service = HidManager.getHidServices();
 
